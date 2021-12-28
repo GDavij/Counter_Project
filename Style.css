@@ -1,0 +1,113 @@
+/*
+    Counter Project ; CSS Part; V: Alpha0.1
+    */
+
+@keyframes RainbowBorder {
+    0%{
+        border: 2px solid rgb(255, 255, 0);
+    }
+    20%{
+        border: 2px solid rgb(0, 255, 255);
+    }
+    40%{
+        border: 2px solid rgb(255, 0, 255);
+    }
+    60%{
+        border: 2px solid rgb(0, 0, 255);
+    }
+    80%{
+        border: 2px solid rgb(0, 255, 0);
+    }
+    100%{
+        border: 2px solid rgb(255, 0, 0);
+    }
+}
+*{
+    position: fixed;
+}
+body{
+    background-color: #0a0a0a;
+}
+#TimeShow{
+    margin-left: 600px;
+    margin-top: 200px;
+    font-size: 100px;
+    color: white;
+    animation: 10s RainbowBorder infinite alternate;
+    border-radius: 50px;
+    width: 700px;
+    text-align: center;
+    font-family: monospace;
+}
+.Buttons{
+    border: 2px solid white;
+    border-radius: 100px;
+    color: whitesmoke;
+}
+#StartButton{
+    background-color: #101F10;
+    height: 45px;
+    width: 150px;
+    font-size: 25px;
+    margin-top: 340px;
+    margin-left: 700px;
+}
+#ResetButton{
+    background-color: #1f1f10;
+    height: 45px;
+    width: 150px;
+    font-size: 25px;
+    margin-top: 340px;
+    margin-left: 860px;
+}
+#PauseButton{
+    background-color: #1f1010;
+    height: 45px;
+    width: 150px;
+    font-size: 25px;
+    margin-top: 340px;
+    margin-left: 1020px;
+}
+#RegisterPoint{
+    margin-left: 10px;
+    margin-top: 200px;
+    font-size: 20px;
+    color: whitesmoke;
+    border: 2px solid white;
+    border-radius: 50px;
+    width: 500px;
+    max-width: 500px;
+    min-width: 500px;
+    height: 505px;
+    max-height: 505px;
+    min-height: 505px;
+    text-align: center;
+    font-family: monospace;
+    background-color: #0f0a0f;
+}
+#AddPoint{
+    margin-left: 10px;
+    margin-top: 150px;
+    font-size: 10px;
+    color: whitesmoke;
+    border: 2px solid white;
+    border-radius: 50px;
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    font-family: monospace;
+    background-color: #0f000f;
+}
+#ResetPoint{
+    margin-left: 260px;
+    margin-top: 150px;
+    font-size: 10px;
+    color: whitesmoke;
+    border: 2px solid white;
+    border-radius: 50px;
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    font-family: monospace;
+    background-color: #0f000f;
+}
