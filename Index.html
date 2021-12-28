@@ -1,0 +1,25 @@
+<!--
+    Counter Project ; HTML Part; V: Alpha0.1
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+<p id="FixedP">
+    <button id="AddPoint" onclick="OtherActionsServer('ADP')">Add CheckPoint</button>
+    <button id="ResetPoint" onclick="OtherActionsServer('RSP')">Reset CheckPoints</button>
+    <textarea disabled id="RegisterPoint">CheckPoints</textarea>
+    <span id="TimeShow">00:00:00:00</span>
+    <button id="StartButton" class="Buttons" onclick="PrincipalActionsServer('STA')">Start</button>
+    <button id="PauseButton" class="Buttons"  onclick="PrincipalActionsServer('PAC')">Pause</button>
+    <button id="ResetButton" class="Buttons"  onclick="PrincipalActionsServer('RSC')">Reset</button>
+</p>
+</body>
+<link rel="stylesheet" href="./Style.css">
+<script src="./Index.js"></script>
+</html>
