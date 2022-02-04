@@ -1,0 +1,27 @@
+{
+  "name": "counter",
+  "version": "1.0.0",
+  "description": "<--=Hello, this is a Description of the actual Status of the project, the Bugs Know and some other infos=-->",
+  "main": "Index.js",
+  "scripts": {
+   "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GDavij/Counter_Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GDavij/Counter_Project/issues"
+  },
+  "homepage": "https://github.com/GDavij/Counter_Project#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
