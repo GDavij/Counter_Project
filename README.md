@@ -1,5 +1,5 @@
 <code>
-NOW With Express and Display Flex !!
+Now With TypeScript and new CSS Palete Colors
 Project Remake !! (Better Maintence Now)
 
 <--=Hello, this is a Description of the actual Status of the project, the Bugs Know and some other infos=--> 
@@ -16,12 +16,11 @@ Why This ?? {
 
 
 Bugs Know?? {
- No Bugs Related During Tests till now
- just one display error but nothing that get a bad experience to the webSite => it is when you add checkpoints on cellphones by what seens it enter a little on <hr> tag, but it is very easy to fix just scroll <footer> and it will probaly to plus fix it by the moment 
+ No Bugs Related During Tests Actually
 }
 
 Info's ?? {
  uhm... 
- the Remake Style is on beta cause i think it can be better with the colors pallete and harmony
+ Now with TypeScript and the probally Last Version of Css Palete
 }
-<code>
+</code>
