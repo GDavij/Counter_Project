@@ -1,0 +1,336 @@
+:root{
+    /* Background Basics */
+    --Background:linear-gradient(60deg, #000, #326);
+
+    /*Border Basics */
+    --LightLines: #759;
+
+    --HeavyLines: #62a;
+
+    /*Buttons Base */
+    --Start: #4c6;
+
+    --Reset: #cc5;
+
+    --Stop: #c07 ;
+
+    --AddCheck: #8ac;
+
+    --RemCheck: #aac;
+
+
+    /* Text Basics */
+    --FocusText: #f55;
+
+    --LowFocusText: #a0f;
+
+    --NormalText: #ccc;
+
+    --CheckPointsText: #87c;
+
+    --ButtonsText: #222;
+}
+
+
+*{
+    margin: 0;
+}
+
+body{
+    background: var(--Background);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 800px ){
+
+    #Smartphones{
+        display: none;
+    }
+
+footer{
+    display: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    justify-content: start;
+    align-items: center;
+}
+
+
+header{
+    border-bottom: 2px solid var(--LightLines);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    color: var(--NormalText);
+    width: 100vw;
+    height: 25px;
+}
+
+
+
+main{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+flex-grow: 1;
+flex-shrink: 0;
+width: 100vw;
+
+
+}
+#datas{
+    display: flex;
+    padding: 40px;
+    border: 2px solid var(--HeavyLines);
+    font-size: 40px;
+    border-radius: 50px;
+    color: var(--FocusText);
+}
+
+#ControlsB{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 50px;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+}
+.ControlButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    border: 2px solid var(--HeavyLines);
+    border-radius: 5px;
+    color: var(--ButtonsText);
+    font-size: 25px;
+}
+#RunButton{
+    background-color: var(--Start);
+}
+#ResetButton{
+    background-color: var(--Reset);
+}
+#PauseButton{
+    background-color: var(--Stop);
+}
+
+#CheckpointsControl{
+    display: flex;
+    flex-direction: row;/* it does not need to as it is default but i prefer to sometimes */ 
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50px;
+    gap: 25px;
+}
+.ControlCheckpoint{
+    width: 160px;
+    height: 25px;
+    border: 2px solid var(--HeavyLines);
+    color: var(--ButtonsText);
+    font-size: 15px;
+    border-radius: 5px;
+}
+#AddCheckpoints{
+background-color: var(--AddCheck);
+}
+#RemCheckpoints{
+    background-color: var(--RemCheck);
+}
+
+
+.Checkpoints{
+    border-top: 2px solid var(--LightLines);
+    color: var(--LowFocusText);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 100vw;
+    height: 300px;
+    overflow: auto;
+}
+hr{
+    width: 95vw;
+    border-color: var(--LightLines);
+}
+#CheckpointsOutputDesk{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--CheckPointsText);
+}
+
+.Checkpoints::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+.Checkpoints::-webkit-scrollbar-thumb{
+    background: linear-gradient(90deg,#000 , var(--HeavyLines));
+    border-radius: 10px;
+}
+.Checkpoints{
+scrollbar-width: thin;
+scrollbar-color: var(--HeavyLines) #000;
+}
+
+}
+/*To Be Continued*/
+
+@media only screen and (max-width: 800px ){
+    #Desktops{
+        display: none;
+    }
+
+    header{
+        display:none
+    }
+
+    body{
+        justify-content: flex-end;
+        align-items: center;
+        width: 100vw;
+        height: calc( 100vh - 44px - 10px);
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        flex-grow: 0;
+        flex-shrink: 0;
+        width: 100%;
+        height: 4rem;
+        background: linear-gradient(180deg, #fff0, #fff5);
+    }
+    main{
+        border-top: 2px solid var(--LightLines);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        flex-shrink: 0;
+        width: 100vw;
+        
+        
+        }
+        #datas{
+            display: flex;
+            padding: 40px;
+            border: 2px solid var(--HeavyLines);
+            font-size: 40px;
+            border-radius: 50px;
+            color: var(--FocusText);
+        }
+        
+        #ControlsB{
+            display: flex;
+            flex-direction: row;
+            width: 100vw;
+            height: 180px;
+            justify-content: center;
+            gap: 25px;
+            align-items: center;
+        }
+        .ControlButtons{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 70px;
+            border: 2px solid var(--HeavyLines);
+            border-radius: 5px;
+            color: var(--ButtonsText);
+            font-size: 25px;
+        }
+        #RunButton{
+            background-color: var(--Start);
+        }
+        #ResetButton{
+            background-color: var(--Reset);
+        }
+        #PauseButton{
+            background-color: var(--Stop);
+        }
+        
+        #CheckpointsControl{
+            display: flex;
+            flex-direction: row;/* it does not need to as it is default but i prefer to sometimes */ 
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 70px;
+            gap: 25px;
+        }
+        .ControlCheckpoint{
+            width: 160px;
+            height: 60px;
+            border: 2px solid var(--HeavyLines);
+            color: var(--ButtonsText);
+            font-size: 15px;
+            border-radius: 5px;
+        }
+        #AddCheckpoints{
+        background-color: var(--AddCheck);
+        }
+        #RemCheckpoints{
+            background-color: var(--RemCheck);
+        }
+        
+        
+        
+        .Checkpoints{
+            border-top: 2px solid var(--LightLines);
+            color: var(--LowFocusText);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            flex-grow: 0;
+            flex-shrink: 0;
+            width: 100vw;
+            height: 150px;
+            overflow: auto;
+        }
+        hr{
+            width: 95vw;
+            border-color: var(--LightLines);
+        }
+
+        #CheckpointsOutputSmartp{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            color: var(--CheckPointsText);
+        }
+        #Checkpoints::-webkit-scrollbar{
+            width: 10px;
+            height: 10px;
+        }
+        #Checkpoints::-webkit-scrollbar-thumb{
+            background: linear-gradient(270deg,#000 , var(--HeavyLines));
+            border-radius: 10px;
+        }
+        #Checkpoints{
+        scrollbar-width: thin;
+        scrollbar-color: var(--HeavyLines) #000;
+        }
+}
