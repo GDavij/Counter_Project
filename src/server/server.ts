@@ -6,16 +6,16 @@ const port = 8080
 
 let Acesses = 1
 
-app.set('views' , 'views')
+app.set('views' , 'dist/views')
 app.set('view engine' , 'ejs')
 
-app.use(express.static('public'))
+app.use(express.static('dist'))
 
-app.use('css',express.static(__dirname + 'public/css'))
-app.use('js',express.static(__dirname + 'public/js'))
+app.use('css', express.static(__dirname + 'public/css'))
+app.use('ts', express.static(__dirname + 'code'))
 
 app.get('/', (req, res) => {
-   res.render('pages/index')
+   res.render('pages/Index')
    console.log(`Acess #${Acesses}`)
     ++Acesses
 })
